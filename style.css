@@ -61,5 +61,22 @@ h1 {
     margin: 0 0 5px;
 }
  small {
+     font-size: 20px;
      font-weight: 100;
+ }
+
+ @media (max-width: 600px) {
+     h1 {
+         font-size: 48px;
+     }
+     .time {
+         margin: 5px;
+     }
+     .time h2 {
+         font-size: 30px;
+         margin: 5px;
+     }
+     small {
+         font-size: 12px;
+     }
  }
