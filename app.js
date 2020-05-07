@@ -15,9 +15,9 @@ function updateTime() {
 	const second = Math.floor(difference / 1000) % 60;
 
 	days.innerHTML = day;
-	hours.innerHTML = hour;
-	minutes.innerHTML = minute;
-	seconds.innerHTML = second;
+	hours.innerHTML = hour < 10 ? '0' + hour : hour;
+	minutes.innerHTML = minute < 10 ? '0' + minute : minute;
+	seconds.innerHTML = second < 10 ? '0' + second : second;
 }
 
 setInterval(updateTime,1000);
