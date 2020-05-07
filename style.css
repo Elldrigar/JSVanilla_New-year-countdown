@@ -52,7 +52,7 @@ h1 {
 }
 
 .countdown {
-    display: flex;
+    display: none;
     transform: scale(1.8);
 }
 
@@ -75,12 +75,13 @@ h1 {
  }
 
  .loading {
-     margin: auto;
      background: rgba(0, 0, 0, 0);
      display: block;
      shape-rendering: auto;
      animation-play-state: running;
      animation-delay: 0s;
+     width: 100px;
+     height: 100px;
  }
 
  @media (max-width: 600px) {
