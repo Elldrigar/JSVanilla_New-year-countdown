@@ -1,3 +1,4 @@
+const loading = document.getElementById('loading');
 const countdown = document.getElementById('countdown');
 const year = document.getElementById('year');
 const days = document.getElementById('days');
@@ -23,5 +24,11 @@ function updateTime() {
 	minutes.innerHTML = minute < 10 ? '0' + minute : minute;
 	seconds.innerHTML = second < 10 ? '0' + second : second;
 }
+
+//Show loading icon
+setTimeout(() => {
+	loading.remove();
+	countdown.style.display = 'flex';
+},1000);
 
 setInterval(updateTime,1000);
