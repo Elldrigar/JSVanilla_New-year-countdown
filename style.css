@@ -41,6 +41,15 @@ h1 {
     font-weight: 100;
     margin: -60px 0 40px;
 }
+.year {
+    position: absolute;
+    bottom: 21px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 200px;
+    opacity:0.3;
+    z-index: -1;
+}
 
 .countdown {
     display: flex;
