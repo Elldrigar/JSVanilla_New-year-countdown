@@ -74,6 +74,15 @@ h1 {
      font-weight: 100;
  }
 
+ .loading {
+     margin: auto;
+     background: rgba(0, 0, 0, 0);
+     display: block;
+     shape-rendering: auto;
+     animation-play-state: running;
+     animation-delay: 0s;
+ }
+
  @media (max-width: 600px) {
      h1 {
          font-size: 48px;
